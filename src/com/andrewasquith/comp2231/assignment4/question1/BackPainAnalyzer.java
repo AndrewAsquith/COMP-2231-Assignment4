@@ -1,4 +1,8 @@
+package com.andrewasquith.comp2231.assignment4.question1;
+
 import java.io.*;
+
+import jsjf.DecisionTree;
 
 /**
  * BackPainAnaylyzer demonstrates the use of a binary decision tree to 

@@ -57,6 +57,11 @@ public class LinkedBinaryTree<T> implements BinaryTreeADT<T>, Iterable<T>
     public T getRootElement() throws EmptyCollectionException
     {
         // To be completed as a Programming Project
+    	if (root == null) {
+    		throw new EmptyCollectionException("LinkedBinaryTree");
+    	} else {
+    		return root.getElement();
+    	}
     }
     
     /**
@@ -68,6 +73,11 @@ public class LinkedBinaryTree<T> implements BinaryTreeADT<T>, Iterable<T>
     protected BinaryTreeNode<T> getRootNode() throws EmptyCollectionException
     {
         // To be completed as a Programming Project
+    	if (root == null) {
+    		throw new EmptyCollectionException("LinkedBinaryTree");
+    	} else {
+    		return root;
+    	}
     }
     
     /**
@@ -78,6 +88,7 @@ public class LinkedBinaryTree<T> implements BinaryTreeADT<T>, Iterable<T>
     public LinkedBinaryTree<T> getLeft()
     {
         // To be completed as a Programming Project
+    	
     }
     
     /**
@@ -88,6 +99,7 @@ public class LinkedBinaryTree<T> implements BinaryTreeADT<T>, Iterable<T>
     public LinkedBinaryTree<T> getRight()
     {
         // To be completed as a Programming Project
+    	
     }
     
     /**

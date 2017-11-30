@@ -1,4 +1,4 @@
-import jsjf.*;
+package jsjf;
 import java.util.*;
 import java.io.*;
 
