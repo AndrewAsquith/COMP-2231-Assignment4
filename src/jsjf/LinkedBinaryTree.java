@@ -156,14 +156,14 @@ public class LinkedBinaryTree<T> implements BinaryTreeADT<T>, Iterable<T>
     	// add 1 for this node
     	int size = 1;
     	
-    	//if the left child is not null, add number of children
+    	//if the left child is not null, add 1 for node + number of children
     	if (root.getLeft() != null) {
-    		size += root.getLeft().numChildren();
+    		size += 1 + root.getLeft().numChildren();
     	}
     		
-    	// if the right child is not null, add number of children
+    	// if the right child is not null, add 1 for node + number of children
     	if (root.getRight() != null) {
-    		size += root.getRight().numChildren();
+    		size += 1 + root.getRight().numChildren();
     	}
     	return size;
     }

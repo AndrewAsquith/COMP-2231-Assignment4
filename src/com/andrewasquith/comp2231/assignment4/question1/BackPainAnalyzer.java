@@ -17,7 +17,7 @@ public class BackPainAnalyzer
     {
         System.out.println ("So, you're having back pain.");
 
-        DecisionTree expert = new DecisionTree("input.txt");
+        DecisionTree expert = new DecisionTree("backpain-input.txt");
         expert.evaluate();
     }
 }
