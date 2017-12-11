@@ -1,7 +1,13 @@
 package com.andrewasquith.comp2231.assignment4.question2;
 
+/**
+ * Import the iterator interface
+ */
 import java.util.Iterator;
 
+/**
+ * Import the classes this one extends
+ */
 import jsjf.BinaryTreeNode;
 import jsjf.LinkedBinarySearchTree;
 
