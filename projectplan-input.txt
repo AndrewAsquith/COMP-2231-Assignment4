@@ -1,0 +1,20 @@
+13
+Is there a budget?
+Is there an immediate need?
+Is there management buy-in?
+Are there available resources?
+Can someone champion it?
+Is there clear scope?
+Budget for next year.
+Not a possiblity at this time.
+Run it as a skunk works project.
+It's not likely to be approved.
+Prepare a pitch for management.
+Refine the project scope.
+Schedule the project.
+1 6 3
+3 7 8
+4 9 10
+5 11 12
+2 4 5
+0 1 2
