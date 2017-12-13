@@ -1,3 +1,13 @@
+/**
+ * @author Andrew Asquith
+ * COMP 2231
+ * Assignment 4
+ * Question 2 - BalancingLinkedBinarySearchTree
+ * Implementation completed through methods which 
+ * were required in jsjf.LinkedBinarySearchTree
+ * as well as this extending class that contains the
+ * brute force balancing routine
+ */
 package com.andrewasquith.comp2231.assignment4.question2;
 
 /**
@@ -11,6 +21,12 @@ import java.util.Iterator;
 import jsjf.BinaryTreeNode;
 import jsjf.LinkedBinarySearchTree;
 
+/**
+ * A Binary Search Tree implementation that balances by using
+ * a brute force array based method
+ * 
+ * @param <T> the type of element the tree will contain
+ */
 public class BalancingLinkedBinarySearchTree<T> extends LinkedBinarySearchTree<T> {
 
 	

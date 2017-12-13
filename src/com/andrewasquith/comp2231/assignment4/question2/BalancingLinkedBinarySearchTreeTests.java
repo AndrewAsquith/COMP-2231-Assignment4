@@ -1,3 +1,10 @@
+/**
+ * @author Andrew Asquith
+ * COMP 2231
+ * Assignment 4
+ * Question 2 - BalancingLinkedBinarySearchTreeTests
+ * Test harness for the BalancingLinkedBinarySearchTree class
+ */
 package com.andrewasquith.comp2231.assignment4.question2;
 
 /**
@@ -9,7 +16,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Test harness to ensure the brute force balancing implementaiton works
+ * Test harness to ensure the brute force balancing 
+ * implementation works as expected
  *
  */
 public class BalancingLinkedBinarySearchTreeTests {
@@ -21,6 +29,7 @@ public class BalancingLinkedBinarySearchTreeTests {
 
 	@Before
 	public void setUp() throws Exception {
+		//create a new tree for each test
 		tree = new BalancingLinkedBinarySearchTree<Integer>();
 	}
 
@@ -28,12 +37,20 @@ public class BalancingLinkedBinarySearchTreeTests {
 	public void tearDown() throws Exception {
 	}
 
+	/**
+	 * Test of a tree with just the root element
+	 */
 	@Test
 	public final void TestTreeWithOneElement() {
 		tree.addElement(8);
 		assertEquals(new Integer(8), tree.getRootElement());
 	}
-
+	
+	/**
+	 * Test of a tree with two elements 
+	 * Balancing should make the second 
+	 * element added the root
+	 */
 	@Test
 	public final void TestTreeWithTwoElements() {
 		tree.addElement(8);
@@ -46,6 +63,11 @@ public class BalancingLinkedBinarySearchTreeTests {
 		assertEquals(new Integer(8), tree.getRight().getRootElement());
 	}
 
+	/**
+	 * Test of a tree with three elements
+	 * Balancing should make the first element 
+	 * added the root with the other two becoming leaf nodes
+	 */
 	@Test
 	public final void TestTreeWithThreeElements() {
 		tree.addElement(8);
@@ -60,6 +82,9 @@ public class BalancingLinkedBinarySearchTreeTests {
 
 	}
 
+	/**
+	 * Test of a tree with six elements added out of order
+	 */
 	@Test
 	public final void TestTreeWithSixElements() {
 		tree.addElement(8);
@@ -82,6 +107,10 @@ public class BalancingLinkedBinarySearchTreeTests {
 		assertEquals(new Integer(12), tree.getRight().getRight().getRootElement());
 	}
 
+	/**
+	 * Test of a tree with six elements out of order and the 
+	 * resulting root being removed forcing a rebalancing
+	 */
 	@Test
 	public final void TestTreeWithSixAdditionsAndRootRemoval() {
 		tree.addElement(8);
@@ -107,6 +136,9 @@ public class BalancingLinkedBinarySearchTreeTests {
 		assertEquals(new Integer(12), tree.getRight().getRight().getRootElement());
 	}
 
+	/**
+	 * Test of a tree with multiple additions and removals
+	 */
 	@Test
 	public final void TestTreeWithMultipleAdditionsAndRemovals() {
 		tree.addElement(8);
@@ -141,5 +173,4 @@ public class BalancingLinkedBinarySearchTreeTests {
 		assertEquals(new Integer(1), tree.findMin());
 		assertEquals(new Integer(14), tree.findMax());
 	}
-
 }

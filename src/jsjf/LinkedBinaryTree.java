@@ -57,6 +57,8 @@ public class LinkedBinaryTree<T> implements BinaryTreeADT<T>, Iterable<T>
     public T getRootElement() throws EmptyCollectionException
     {
         // To be completed as a Programming Project
+    	
+    	//If the root is null throw, otherwise return the root element
     	if (root == null) {
     		throw new EmptyCollectionException("LinkedBinaryTree");
     	} else {
@@ -73,6 +75,8 @@ public class LinkedBinaryTree<T> implements BinaryTreeADT<T>, Iterable<T>
     protected BinaryTreeNode<T> getRootNode() throws EmptyCollectionException
     {
         // To be completed as a Programming Project
+    	
+    	//if the root is null throw, otherwise return the root node
     	if (root == null) {
     		throw new EmptyCollectionException("LinkedBinaryTree");
     	} else {
@@ -331,6 +335,8 @@ public class LinkedBinaryTree<T> implements BinaryTreeADT<T>, Iterable<T>
     public Iterator<T> iteratorPreOrder() 
     {
         // To be completed as a Programming Project
+    	
+    	//create a new array list and use the preOrder method to fill it
     	ArrayUnorderedList<T> tempList = new ArrayUnorderedList<T>();
         preOrder(root, tempList);
         
@@ -367,6 +373,8 @@ public class LinkedBinaryTree<T> implements BinaryTreeADT<T>, Iterable<T>
     public Iterator<T> iteratorPostOrder() 
     {
         // To be completed as a Programming Project
+    	
+    	// create a new array list and populate it with the postorder method
     	ArrayUnorderedList<T> tempList = new ArrayUnorderedList<T>();
         postOrder(root, tempList);
         

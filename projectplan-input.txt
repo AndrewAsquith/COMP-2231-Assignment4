@@ -12,8 +12,8 @@ It's not likely to be approved.
 Prepare a pitch for management.
 Refine the project scope.
 Schedule the project.
-1 6 3
 3 7 8
+1 6 3
 4 9 10
 5 11 12
 2 4 5

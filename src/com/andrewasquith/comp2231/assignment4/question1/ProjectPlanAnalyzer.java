@@ -1,7 +1,21 @@
+/**
+ * @author Andrew Asquith
+ * COMP 2231
+ * Assignment 4
+ * Question 1 - ProjectPlanAnalyzer
+ * Implementation completed through methods which 
+ * were required in jsjf.LinkedBinaryTree
+ */
 package com.andrewasquith.comp2231.assignment4.question1;
 
+/**
+ * Import the io package for reading the input file
+ */
 import java.io.*;
 
+/**
+ * Import the decision tree implementation from jsjf
+ */
 import jsjf.DecisionTree;
 
 /**

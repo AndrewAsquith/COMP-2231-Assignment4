@@ -283,8 +283,11 @@ public class LinkedBinarySearchTree<T> extends LinkedBinaryTree<T> implements Bi
 	 */
 	public T removeMax() throws EmptyCollectionException {
 		// To be completed as a Programming Project
+		
+		//target result is null if not found
 		T result = null;
 
+		// if the tree is empty, throw
 		if (isEmpty()) {
 			throw new EmptyCollectionException("LinkedBinarySearchTree");
 		} else {
@@ -327,8 +330,11 @@ public class LinkedBinarySearchTree<T> extends LinkedBinaryTree<T> implements Bi
 	 */
 	public T findMin() throws EmptyCollectionException {
 		// To be completed as a Programming Project
+		
+		//target result is null if not found
 		T result = null;
 
+		//if the tree is empty, throw
 		if (isEmpty()) {
 			throw new EmptyCollectionException("LinkedBinarySearchTree");
 		} else {
@@ -363,8 +369,12 @@ public class LinkedBinarySearchTree<T> extends LinkedBinaryTree<T> implements Bi
 	 */
 	public T findMax() throws EmptyCollectionException {
 		// To be completed as a Programming Project
+		
+		//target result is null if not found
 		T result = null;
 
+		
+		// if the tree is empty, throw
 		if (isEmpty()) {
 			throw new EmptyCollectionException("LinkedBinarySearchTree");
 		} else {
